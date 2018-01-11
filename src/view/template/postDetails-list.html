@@ -4,7 +4,7 @@
         <p>{{data.cityName+'：  '}}{{data.experience}}  {{data.education}}</p>
         <p>{{data.benefit}}</p>
     </div>
-    <li class="detailsBottom">
+    <li class="detailsBottom" ui-sref="lagouPostCompany({id:data.id})">
         <figure><img ng-src="{{data.imageUrl}}" alt="{{data.companyName}}"></figure>
         <div>
             <p>{{data.companyName}}</p>

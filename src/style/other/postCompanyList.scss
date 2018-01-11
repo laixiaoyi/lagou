@@ -1,0 +1,16 @@
+.postCompanyList{
+  @extend .list;
+  >.list{
+    @extend .detailsBottom;
+    border: none;
+    margin: 0;
+    >div{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  >h2{
+    padding: 0 0.14rem;
+  }
+}

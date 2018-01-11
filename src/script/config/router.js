@@ -30,6 +30,14 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         controller:function ($stateParams,$scope) {
             $scope.id=$stateParams.id;
         }
+    })
+    .state('lagouPostCompany',{
+        url:'/lagouPostCompany/:id',
+        templateUrl:'view/lagouPostCompany.html',
+        controller:function ($stateParams,$scope) {
+            $scope.id=$stateParams.id;
+            // console.log($scope.id);
+        }
     });
     $u.otherwise('lagouPost');
 }]);
