@@ -19,9 +19,7 @@
           font-size: 0.16rem;
           margin-bottom: 0.06rem;
           width: 80%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+          @extend .textHide;
         }
         >p:nth-child(2){
           margin-bottom: 0.06rem;
@@ -34,9 +32,7 @@
           >span:nth-child(1){
             font-size: 0.12rem;
             width: 60%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+           @extend .textHide;
           }
           >span:nth-child(2){
             font-size: 0.16rem;

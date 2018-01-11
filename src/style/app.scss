@@ -27,6 +27,11 @@ html,body{
   align-items: center;
   justify-content: center;
 }
+.textHide{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .view{
   width: $bai;
   height: $bai;

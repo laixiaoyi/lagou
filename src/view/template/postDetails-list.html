@@ -1,11 +1,15 @@
-<div class="postDetailsList">
-    <div>
-        <p>{{data.job}}：  {{data.salaryName}}</p>
-        <p>{{data.cityName}}：  {{data.experience}}  {{data.education}}</p>
+<ul class="postDetailsList">
+    <div class="detailsTop">
+        <p>{{data.job+'：  '}}<span>{{data.salaryName}}</span></p>
+        <p>{{data.cityName+'：  '}}{{data.experience}}  {{data.education}}</p>
         <p>{{data.benefit}}</p>
     </div>
-    <div>
-        <p></p>
-        <p></p>
-    </div>
-</div>
+    <li class="detailsBottom">
+        <figure><img ng-src="{{data.imageUrl}}" alt="{{data.companyName}}"></figure>
+        <div>
+            <p>{{data.companyName}}</p>
+            <p>{{data.industryName}}/A轮/{{data.scaleName}}</p>
+        </div>
+    </li>
+    <p>{{data.description}}</p>
+</ul>

@@ -1,3 +1,32 @@
 .postDetailsList{
-
+  padding: 0.1rem;
+  @extend .list;
+  >.detailsTop{
+    border-bottom: 0.01rem solid #f1f1f1;
+    padding-bottom: 0.1rem;
+    >p{
+      line-height: 0.25rem;
+      >span{
+        color: red;
+      }
+    }
+  }
+  >.detailsBottom{
+    padding: 0.1rem 0;
+    border: none;
+    >div{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      >p{
+        font-size: 0.14rem;
+      }
+   }
+  }
+  >p{
+    width: 90%;
+    @extend .textHide;
+    margin-top: 0.05rem;
+    font-size: 0.16rem;
+  }
 }
