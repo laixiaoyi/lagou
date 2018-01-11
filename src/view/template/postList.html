@@ -1,5 +1,5 @@
-<ul class="list" ui-sref="lagouPostDetails">
-    <li ng-repeat="item in data">
+<ul class="list">
+    <li ng-repeat="item in data" ui-sref="lagouPostDetails({id:item.id})">
         <figure><img ng-src="{{item.imageUrl}}" alt="{{item.companyName}}"></figure>
         <div>
             <h2>{{item.companyName}}</h2>

@@ -5,7 +5,8 @@
  */
 angular.module('app').controller('lagouPostDetails',function ($scope,myService) {
     myService.getCode('position-detail').then(function (res) {
-       $scope.detailsList=res.data;
-       console.log(res);
+       $scope.detailsList=res.data[$scope.id];
+       // console.log(res.data[$scope.id]);
+       // console.log($scope.id);
     });
 });

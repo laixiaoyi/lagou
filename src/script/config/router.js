@@ -25,8 +25,11 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         templateUrl:'view/lagouMy-login-enter.html'
     })
     .state('lagouPostDetails',{
-        url:'/lagouPostDetails',
-        templateUrl:'view/lagouPostDetails.html'
+        url:'/lagouPostDetails/:id',
+        templateUrl:'view/lagouPostDetails.html',
+        controller:function ($stateParams,$scope) {
+            $scope.id=$stateParams.id;
+        }
     });
     $u.otherwise('lagouPost');
 }]);
