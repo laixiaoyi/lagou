@@ -5,6 +5,11 @@ angular.module('app').directive('postDetailsHeader',function () {
        templateUrl:'view/template/postDetails-header.html',
        scope:{
            data:'@'
+       },
+       controller:function ($scope) {
+           $scope.retreat=function () {
+               window.history.go(-1);
+           };
        }
    };
 });
