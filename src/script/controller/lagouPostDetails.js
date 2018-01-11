@@ -3,6 +3,9 @@
  * Create  Time：2018-01-10 20:23;
  * Description：
  */
-angular.module('app').controller('lagouPostDetails',function ($scope) {
-    $scope.postDetailsText='职位详情';
+angular.module('app').controller('lagouPostDetails',function ($scope,myService) {
+    myService.getCode('position-detail').then(function (res) {
+       $scope.detailsList=res.data;
+       console.log(res);
+    });
 });

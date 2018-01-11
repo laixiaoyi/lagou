@@ -69,19 +69,19 @@ html,body{
         color: #888;
       }
     }
-    >.myLogin{
-      width: 80%;
-      margin: 0 auto;
-      border-radius: 0.05rem;
-      height: 0.45rem;
-      font-size: 0.2rem;
-      line-height: 0.45rem;
-      text-align: center;
-      background: #00b38a;
-      color: #fff;
-      margin-top: 50%;
-    }
   }
+}
+.myLogin{
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0.05rem;
+  height: 0.45rem;
+  font-size: 0.2rem;
+  line-height: 0.45rem;
+  text-align: center;
+  background: #00b38a;
+  color: #fff;
+  margin-top: 50%;
 }
 //公共样式结束
 @import "other/postHeader";
@@ -90,3 +90,4 @@ html,body{
 @import "other/lagouMy-register";
 @import "other/MyLoginEnter";
 @import "other/postDetails-header";
+@import "other/postDetails-list";
