@@ -1,0 +1,8 @@
+<div class="postCompanyTab">
+    <input type="button" ng-class="{'active':$index===oIndex}" ng-repeat="item in data" value="{{item.name}}" ng-click="myTab($index)">
+    <section>
+       <p>{{data[oIndex].positionList[0].name}}</p>
+       <p>{{data[oIndex].positionList[0].createdDate}}</p>
+       <p>{{data[oIndex].positionList[0].salary}}</p>
+    </section>
+</div>

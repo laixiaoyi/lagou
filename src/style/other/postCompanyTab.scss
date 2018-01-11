@@ -1,0 +1,23 @@
+.postCompanyTab{
+  padding-left: 0.14rem;
+  >input{
+    border: none;
+    background: #f5f5f5;
+    padding: 0.08rem 0.25rem;
+    border-radius: 1rem;
+    font-size: 0.12rem;
+    color: #00b38a;
+    margin: 0.1rem 0;
+    margin-right: 0.15rem;
+    outline: none;
+  }
+  >.active{
+    background: #00b38a;
+    color: #fff;
+  }
+  >section{
+    >p{
+      margin: 0.05rem 0;
+    }
+  }
+}

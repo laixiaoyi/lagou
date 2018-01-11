@@ -1,5 +1,6 @@
 .postCompanyList{
   @extend .list;
+  margin: 0;
   >.list{
     @extend .detailsBottom;
     border: none;
