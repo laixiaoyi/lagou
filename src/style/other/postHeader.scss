@@ -1,0 +1,15 @@
+//header start
+.lagouPost>header{
+  width: $bai;
+  text-align: center;
+  position: relative;
+  >h1{
+    background: #00b38a;
+    color: #fff;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    font-size: 0.19rem;
+    font-weight: normal;
+  }
+}
+//header end

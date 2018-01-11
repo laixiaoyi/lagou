@@ -1,0 +1,13 @@
+<ul class="list" ui-sref="lagouPostDetails">
+    <li ng-repeat="item in data">
+        <figure><img ng-src="{{item.imageUrl}}" alt="{{item.companyName}}"></figure>
+        <div>
+            <h2>{{item.companyName}}</h2>
+            <p>
+                <span>{{item.job}} [ {{item.cityName}} ]</span>
+                <span>{{item.salaryName}}</span>
+            </p>
+            <p>{{item.date}}</p>
+        </div>
+    </li>
+</ul>

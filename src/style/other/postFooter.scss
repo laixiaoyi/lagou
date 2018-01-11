@@ -1,0 +1,38 @@
+//footer start
+.lagouPost>footer{
+  width: $bai;
+  height: 0.45rem;
+  border-top: 0.01rem solid #e8e8e8;
+  background: #f6f6f6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  font-size: 0.16rem;
+  display: flex;
+  line-height: 0.45rem;
+  box-sizing: border-box;
+  >a{
+    height: $bai;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.17rem;
+  }
+}
+//footer end
+
+//footer tab start
+.footerreAvtive{
+  color: #c2cfcc;
+}
+.footerActive{
+  background: #e7f3f0;
+  color: #00b38a;
+}
+//forter tab end
+
+//icon fontiszi rem start
+.iconfont{
+  font-size: 0.18rem !important;
+}
+//icon fontiszi rem end
