@@ -1,10 +1,12 @@
 <div class="lagouPost" ng-controller="lagouSeek">
     <post-header></post-header>
     <div class="seek">
-        <span>城市</span>
-        <span>薪资</span>
-        <span>公司规模</span>
+        <span ng-class="{'spanActive':myIndex===1}" ng-click="myFind('city',1)">城市</span>
+        <span ng-class="{'spanActive':myIndex===2}" ng-click="myFind('salary',2)">薪资</span>
+        <span ng-class="{'spanActive':myIndex===3}" ng-click="myFind('scale',3)">公司规模</span>
     </div>
     <post-list data='postSeek'></post-list>
     <post-footer></post-footer>
+    <lagou-seek-find data="findData" fn="myHide()"></lagou-seek-find>
 </div>
+<div id="zzc" style="display: none;"></div>

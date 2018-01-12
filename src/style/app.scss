@@ -36,6 +36,7 @@ html,body{
 .view{
   width: $bai;
   height: $bai;
+  position: relative;
   >.lagouPost{
     >.login{
       border-bottom: 0.01rem solid #e8e8e8;
@@ -68,14 +69,29 @@ html,body{
       align-items: center;
       background: #f5f5f5;
       >span{
-        height: 0.3rem;
+        height: $bai;
         width: 33.3333%;
         text-align: center;
-        line-height: 0.3rem;
+        line-height: 0.4rem;
         color: #888;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
       }
     }
   }
+}
+.spanActive{
+  border-bottom: 0.02rem solid #ff6928;
+}
+#zzc{
+  width: $bai;
+  height: $bai;
+  position: absolute;
+  background: rgba(0,0,0,0.25);
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .myLogin{
   width: 80%;
@@ -99,3 +115,4 @@ html,body{
 @import "other/postDetails-list";
 @import "other/postCompanyList";
 @import "other/postCompanyTab";
+@import "other/lagouSeekFind";

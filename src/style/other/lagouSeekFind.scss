@@ -1,0 +1,23 @@
+#lagouSeekFind{
+  width: 95%;
+  position: fixed;
+  bottom: 0.55rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
+  border-radius: 0.05rem;
+  padding: 0 0.2rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  >li{
+    text-align: center;
+    line-height: 0.4rem;
+    border-bottom: 0.01rem solid #ececec;
+  }
+  >li:last-child{
+    border: none;
+  }
+}

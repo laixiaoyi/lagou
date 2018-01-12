@@ -1,5 +1,5 @@
 <ul class="list">
-    <li ng-repeat="item in data" ui-sref="lagouPostDetails({id:item.id})">
+    <li ui-sref="lagouPostDetails({id:item.id})" ng-repeat="item in data | myFilter:$root.findId">
         <figure><img ng-src="{{item.imageUrl}}" alt="{{item.companyName}}"></figure>
         <div>
             <h2>{{item.companyName}}</h2>
