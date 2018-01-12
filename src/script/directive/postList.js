@@ -4,8 +4,7 @@ angular.module('app').directive('postList', function () {
         replace: true,
         templateUrl: 'view/template/postList.html',
         scope:{
-            data:'=',
-            text:'='
+            data:'='
         }
     };
 });

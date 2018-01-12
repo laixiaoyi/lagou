@@ -1,6 +1,6 @@
 'use strict';
-angular.module('app').config(['$stateProvider', '$urlRouterProvider', function ($s, $u) {
-    $s.state('lagouPost', {
+angular.module('app').config(function ($stateProvider,$urlRouterProvider) {
+    $stateProvider.state('lagouPost', {
         url: '/lagouPost',
         templateUrl: 'view/lagouPost.html'
     })
@@ -39,5 +39,5 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
             // console.log($scope.id);
         }
     });
-    $u.otherwise('lagouPost');
-}]);
+    $urlRouterProvider.otherwise('lagouPost');
+});
